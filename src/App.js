@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>Lista de Tarefas</h1>
+      <h1>Lista de lugares para viajar</h1>
       <Formulario adicionarTarefa={adicionarTarefa} />
       <ListaDeTarefas tarefas={tarefas} removerTarefa={removerTarefa} editarTarefa={editarTarefa} />
     </div>

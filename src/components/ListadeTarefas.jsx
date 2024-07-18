@@ -4,7 +4,7 @@ import './ListaDeTarefas.css';
 
 const ListaDeTarefas = ({ tarefas, removerTarefa, editarTarefa }) => {
   // Tarefa estática que não pode ser removida nem editada
-  const tarefaFixa = { id: 'static-task', texto: 'Tarefa Fixa - Não Remover nem Editar' };
+  const tarefaFixa = { id: 'static-task', texto: 'Ilha de Bora Bora na Polinésia Francesa' };
 
   return (
     <div className="lista">
