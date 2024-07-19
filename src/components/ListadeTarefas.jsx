@@ -3,15 +3,14 @@ import Tarefa from './tarefa';
 import './ListaDeTarefas.css';
 
 const ListaDeTarefas = ({ tarefas, removerTarefa, editarTarefa }) => {
-  // Tarefa estática que não pode ser removida nem editada
   const tarefaFixa = { id: 'static-task', texto: 'Ilha de Bora Bora na Polinésia Francesa' };
+  const tarefaFixa2 = { id: 'static-task', texto: 'Cidade do Cabo - Áfric do Sul' };
 
   return (
     <div className="lista">
-      {/* Renderiza a tarefa fixa */}
       <Tarefa tarefa={tarefaFixa} removerTarefa={() => {}} editarTarefa={() => {}} />
+      <Tarefa tarefa={tarefaFixa2} removerTarefa={() => {}} editarTarefa={() => {}} />
 
-      {/* Renderiza as tarefas dinâmicas */}
       {tarefas.map(tarefa => (
         <Tarefa key={tarefa.id} tarefa={tarefa} removerTarefa={removerTarefa} editarTarefa={editarTarefa} />
       ))}
